@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Kallum Tolkien</title>
 </head>
+
 <body>
     <div class="content-container">
+
         <header class="title">
             <nav class="navbar">
                 <a href="../index.html">Home</a>
@@ -15,23 +18,77 @@
                 <a href="./contact.html">Contact</a>
             </nav>
             <h1>Contact</h1>
-            <h2>Get in touch with Kallum Tolkien</h2>
-            <div class="divider">
-                <br />
-                <hr />
-            </div>
+            <h2>Want to get in touch with Kallum?</h2>
         </header>
+
         <div class="main">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam aut omnis dicta est mollitia cumque dolor qui nisi. Officia adipisci tenetur reprehenderit earum inventore a tempore repudiandae est odio porro!</p>
+            <p>I'm always interested to hear from people about opportunities of software development and cleantech. Please don't hesitate to get in touch with these or anything else you think I should know about using the form below:</p>
         </div>
+
+        <form action="http://www.example.com/kallumt" method="post">
+
+            <fieldset>
+                <Legend>Your Details:</Legend>
+                    <section id="contact__name">
+                        <label for="name">Name: </label>
+                        <input id="name" type="text" name="name" value="name">
+                    </section>
+
+                    <br>
+
+                    <section id="contact__email">
+                        <label for="email">Email: </label>
+                        <input id="email" type="email" name="email" value="email">
+                    </section>
+            </fieldset>
+
+            <fieldset>
+                <Legend>Your Message:</Legend>
+                    <section id="contact__message">
+
+                        <section class="radio">
+                            <p>Reason for Getting in Touch?:</p>
+
+                            <label for="work">Work:</label>
+                            <input type="radio" name="reason" value="work"/>
+
+                            <label for="collaboration">Collaboration:</label>
+                            <input type="radio" name="reason" value="collaboration">
+
+                            <label for="conversation">Conversation:</label>
+                            <input type="radio" name="reason" value="conversation">
+
+                        </section>
+
+                        <br>
+
+                        <section id="messages">
+                            <label for="message">Message:</label>
+                            <textarea id="message" placeholder="Your message here"></textarea>
+                        </section>
+
+                        <br>
+
+                        <section is="submit">
+                            <input type="submit" value="Send Message">
+                        </section>
+
+                    </section>
+
+            </fieldset>
+
+        </form>
+
         <div class="divider">
             <br />
             <hr />
         </div>
+
         <footer class="footer">
             <p>2021</p>
             <p>Created by Kallum Tolkien</p>
         </footer>
+
     </div>
 </body>
 </html>
