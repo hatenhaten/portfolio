@@ -47,5 +47,4 @@ body {
 @media screen and (max-width: 400px) {
     .nav__item,
     .nav__item:last-child {float:none}
-    /* .nav {position:relative} */
 }
