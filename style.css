@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+.main {
+    padding: 1px 16px;
+}
+
+.nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.nav__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav__item {
+    float: left;
+}
+
+.nav__item:last-child {
+    float: right;
+}
+
+.nav__link {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav__link.active {
+    background-color: grey;
+}
+
+.nav__link:hover:not(.active) {
+    background-color: #111;
+}
+
+@media screen and (max-width: 400px) {
+    .nav__item,
+    .nav__item:last-child {float:none}
+    /* .nav {position:relative} */
+}

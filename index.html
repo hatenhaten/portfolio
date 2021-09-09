@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kallum Tolkien</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <div class="content-container">
-        <header class="title">
-            <nav class="navbar">
-                <a href="./index.html">Home</a>
-                <a href="pages/projects.html" target="_blank" rel="noopener noreferrer">Projects</a>
-                <a href="pages/contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
-            </nav>
-            <h1>Kallum Tolkien</h1>
-            <figure class="headshot">
-                <img src="images/headshot-b&w.jpg" alt="Photograph of Kallum Tolkien" width="400px">
-            </figure>
-            <h2>Aspiring Web Developer and Cleantech Expert</h2>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link active" href="./index.html">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="pages/projects.html">Projects</a></li>
+            <li class="nav__item"><a class="nav__link" href="pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="content">
+        <header class="header">
+            <div class="myDetails">
+                <h1 id="myDetails__title">Kallum Tolkien</h1>
+                <h2 id="myDetails__job">Aspiring Web Developer and Cleantech Expert</h2>
+                <figure>
+                    <img class="myDetails__headshot" src="images/headshot-b&w.jpg" alt="Photograph of Kallum Tolkien" width="400px">
+                </figure>
+            </div>
             <div class="divider">
                 <br />
                 <hr />
@@ -93,5 +103,5 @@
             <p>Created by Kallum Tolkien</p>
         </footer>
     </div>
-</body>
-</html>
+    </body>
+    </html>
