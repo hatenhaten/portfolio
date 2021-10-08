@@ -1,9 +1,47 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html, body {
     margin: 0;
+    min-height: 100%;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 140%;
+}
+
+* {
+    box-sizing: border-box
+}
+
+section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flex__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main {
     padding: 1px 16px;
+}
+
+.footer {
+    padding: 1px 16px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+}
+
+.container__half {
+    flex: 1;
+    padding: 15px;
 }
 
 .nav {
@@ -17,7 +55,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color:  #353535;
 }
 
 .nav__item {
@@ -37,11 +75,24 @@ body {
 }
 
 .nav__link.active {
-    background-color: grey;
+    background-color: #fcb07e;
+    color: #353535;
 }
 
 .nav__link:hover:not(.active) {
     background-color: #111;
+}
+
+.myDetails {
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: right;
+}
+
+#name {
+    font-size: 3em;
 }
 
 @media screen and (max-width: 400px) {
